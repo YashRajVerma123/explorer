@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+#container3 {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background: rgb(88, 0, 210);
+}
+
+#container2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #576574;
+}
+
+#loading {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /* background: #fff; */
+    border-radius: 50%;
+    border-top: 10px solid #ff6b6b;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#loading::after {
+    transform: rotate(120deg);
+    border-top: 10px solid #feca57;
+}
+
+#loading::before {
+    transform: rotate(240deg);
+    border-top: 10px solid #48dbfb;
+}
+
+#loading::after,
+#loading::before {
+    content: '';
+    top: -10px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* background: #fff; */
+    border-radius: 50%;
+}
+
+#loading span {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    animation: a2 2s linear infinite;
+}
+
+@keyframes a2 {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+img {
+    width: 100%;
+    background-size: cover;
+}
+
+#content {
+    display: none;
+}
+
+
+/*<img src="https://wallpaperaccess.com/full/760289.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/760289.jpg" alt="">
+        <img src="https://vijayshekharacademy.com/wp-content/uploads/2014/06/hd-image-3.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/cd/7b/5c/cd7b5c8d4687b5c98a445127926a56e2.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/1678884.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/2964367.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/760289.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/760289.jpg" alt="">
+        <img src="https://vijayshekharacademy.com/wp-content/uploads/2014/06/hd-image-3.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/cd/7b/5c/cd7b5c8d4687b5c98a445127926a56e2.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/1678884.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/2964367.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/760289.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/760289.jpg" alt="">
+        <img src="https://vijayshekharacademy.com/wp-content/uploads/2014/06/hd-image-3.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/cd/7b/5c/cd7b5c8d4687b5c98a445127926a56e2.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/1678884.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/2964367.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/760289.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/760289.jpg" alt="">
+        <img src="https://vijayshekharacademy.com/wp-content/uploads/2014/06/hd-image-3.jpg" alt="">
+        <img src="https://i.pinimg.com/originals/cd/7b/5c/cd7b5c8d4687b5c98a445127926a56e2.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/1678884.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/2964367.jpg" alt="">
+        <img src="./image 1.jpg" alt="">
+        <img src="./image 2.jpg" alt="">
+        <img src="./image 3.jpg" alt="">
+        <img src="./image 4.jpg" alt="">
+        <img src="./image 5.jpg" alt="">*/
